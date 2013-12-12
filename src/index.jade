@@ -1,3 +1,5 @@
+purple = '#6a0bc1'
+
 !!! 5
 html(lang='en')
 head
@@ -6,10 +8,17 @@ head
   body
     .reveal
       .slides
-        section
+
+        section.purple( data-background=purple )
           h1 Force: A Look Back on Artsy Technology
             br
             em A Tale of Technical Debt
+
         section
           h1 Force 2
+
     include scripts
+    script.
+      Reveal.initialize({
+        transition: 'linear'
+      })

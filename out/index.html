@@ -31,8 +31,16 @@
 body {
   font-family: Garamond;
   line-height: 1.4em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
-</style><body><div class="reveal"><div class="slides"><section><h1>Force: A Look Back on Artsy Technology<br><em>A Tale of Technical Debt</em></h1></section><section><h1>Force 2</h1></section></div></div><script src="lib/js/head.min.js"></script><script src="js/reveal.min.js"></script><script>// Full list of configuration options available here:
+section.purple {
+  color: #fff;
+}
+</style><body><div class="reveal"><div class="slides"><section data-background="#6a0bc1" class="purple"><h1>Force: A Look Back on Artsy Technology<br><em>A Tale of Technical Debt</em></h1></section><section><h1>Force 2</h1></section></div></div><script src="lib/js/head.min.js"></script><script src="js/reveal.min.js"></script><script>// Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 controls: true,
@@ -53,4 +61,6 @@ dependencies: [
 { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 ]
-});</script></body></head>
+});</script><script>Reveal.initialize({
+  transition: 'linear'
+})</script></body></head>
