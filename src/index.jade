@@ -4,22 +4,116 @@ black = '#000000'
 html(lang='en')
 head
   include head
+  include styles/reveal.css
   include styles/index.styl
-  body
+  body#artsy
     .reveal
       .slides
 
         section.purple( data-background=purple )
-          h1 Force: A Look Back on Artsy Technology
-            br
+          h1.avant-garde Force
+          br
+          h2
             em A Tale of Technical Debt
 
         section
           img.cover( src='images/artsy.jpg' )
+          em.caption Artsy's beginnnings
+
+        section
+          h2.avant-garde Tech Stack Phase 1
+          br
+          img.cover( src='images/lamp.jpg' )
+
+        section
+          ul
+            li No tests
+            li Had to ask permission to deploy to production
+            li 9000 line stylesheet files (largest ~600 lines now)
+            li 1500 line controller files (largest ~100 lines now)
+          br
+          br
+          br
+          em.caption Brevity is the soul of wit... especially in code
 
         section
           #player
+          em.caption PHP days were spent fighting fires
 
+        section
+          h2.avant-garde Tech Stack Phase 2
+          br
+          img( src='images/rails.png' )
+
+        section
+          img( src='images/comps.jpg' )
+          em.caption Initial Ruby on Rails project codenamed Gravity 0.1
+
+        section
+          iframe( src='http://artsy.net/artwork/andy-warhol-skull', width=1100, height= 600 )
+          br
+          em.caption Robert joins and we have ambitious UI like View in Room
+
+        section
+          iframe( src='http://artsy.net/filter/artworks/sort=-date_added&page=1', width=1100, height= 600 )
+          br
+          em.caption and filter
+
+        section
+          img( src='images/arch1.png' )
+          for i in new Array(5)
+            br
+          em.caption Evolution of Artsy architecture
+
+        section
+          img( src='images/grav.png' )
+          for i in new Array(2)
+            br
+          em.caption Gravity's not so clear separation of concerns
+
+        section
+          img.cover( src='images/flip.gif' )
+          br
+          em.caption Common reaction after a 3 hour build failure
+
+        section
+          h2.avant-garde Tech Stack Phase 3
+          br
+          img( src='images/node.png' )
+
+        section
+          img.cover( src='images/martsy.png' )
+          for i in new Array(3)
+            br
+          em.caption Mobile web architecture
+
+        section
+          img( src='images/fast.png' )
+          br
+          br
+          em.caption Shared rendering code in Node.js for optimized page load
+
+        section
+          ul
+            li Better testing tools = faster builds
+            li Pages load faster
+            li Flexible, modular, and easy to expirment
+            li Smaller responsibilities, easy to set up
+
+        section
+          iframe( src='http://ezeljs.com/', width=1100, height= 600 )
+          for i in new Array(3)
+            br
+          em.caption Open source project extract from Martsy
+
+        section
+          h2.avant-garde So WTF is Force?
+          br
+          br
+          img.cover( src='images/force.gif' )
+
+        section.purple( data-background=purple )
+          h1 Thank you!          
 
     include scripts
     script.

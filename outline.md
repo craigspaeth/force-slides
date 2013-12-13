@@ -1,8 +1,10 @@
-Force: A Look Back on Artsy Technology and a Tale of Technical Debt
-
-3 years ago Artsy splash page
+Force: A Tale of Technical Debt
 
 ![Sketch/Image of Artsy's splash page]()
+
+* 2010 Artsy began as a splash page and stayed that way for a long time
+* Only dev on-location
+* Genome panel was essentially a poor version of an excel sheet
 
 --
 
@@ -30,8 +32,9 @@ Permission to deploy
 Acquired technical debt
 Worked well enough for Firefighting
 
-First round of funding, rebooted tech team
-No designer for months
+First round of funding
+Rebooted tech team
+No designer
 What will make us happy and productive
 
 --
@@ -52,7 +55,7 @@ Worked well, very productive on rigid Rails
 
 [View in Room]()
 
-Robert joins, ambitious awesome design
+Robert joins, ambitious awesome designe
 
 --
 

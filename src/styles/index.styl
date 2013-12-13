@@ -1,14 +1,37 @@
 @import 'fonts'
 @import '../../node_modules/nib'
 
-body
+purple = '#6a0bc1'
+
+#artsy
   font-family Garamond
   line-height 1.4em
   vendor('font-smoothing', antialiased)
 
-img.cover
-  width 100% !important
+#artsy .slides
+  margin-top -2% !important
 
+#artsy .slides section
+  
+  .caption
+    display block
+    font-size 24px
+    margin 20px 0
 
-section.purple
-  color white
+  ul
+    font-size 32px
+    line-height 2em
+
+  .avant-garde
+    font-family 'AvantGarde'
+    text-transform uppercase
+    &h1
+      letter-spacing 4px
+    &h2
+      letter-spacing 2px
+
+  img.cover
+    width 100% !important
+
+  &.purple
+    color white
