@@ -1,6 +1,6 @@
 Force: A Tale of Technical Debt
 
-![Sketch/Image of Artsy's splash page]()
+--
 
 * 2010 Artsy began as a splash page and stayed that way for a long time
 * Only dev on-location
@@ -8,73 +8,64 @@ Force: A Tale of Technical Debt
 
 --
 
-![PHP logo]
-LAMP stack
+* LAMP
 
 --
 
-![bullet points]
-
-One giant 9000+ line CSS files (Many files largest 614)
-1500+ line controller files (Largest is 132)
-No Tests
-Permission to deploy
+* No Tests
+* Permission to deploy
+* 9000+ CSS (largest ~600)
+* 1500+ controller (largest ~100)
 
 --
-
-![Funny gif of two people hacking on the same keyboard]
 
 * Features broke all of the time
 * Performance suffered
 * Slow to develop in
 * Confusing to navigate
 * Hard to set up
-Acquired technical debt
-Worked well enough for Firefighting
 
-First round of funding
-Rebooted tech team
-No designer
-What will make us happy and productive
+* Acquired technical debt
 
---
+* Worked well enough for Firefighting
 
-![ROR logo]()
+* First round of funding
+* Rebooted tech team
 
-Ruby on Rails
+* No designer
+* What will make us happy and productive
 
 --
 
-![Ho-hum Wireframe Sketch]()
-
-TDD
-Agile, standups, anyone deploys
-Worked well, very productive on rigid Rails
+* Ruby on Rails
+* Rigid, does a lot of things for you
 
 --
 
-[View in Room]()
-
-Robert joins, ambitious awesome designe
-
---
-
-[Filter Iframe]()
+* Rebuilt all existing functionality in 2 months undesigned
+* TDD, standups, anyone deploys
+* Very productive
 
 --
 
-![Diagram showing evolution of stack]()
-
-We outsource a mobile app, make API
-"Eat our own dog food", move UI off Rails to Backbone
-Admin panel breaks our tests, we extract it
-CMS + Folio + Mass + Heat... etc. eventually we're not really using Rails at all
+* Robert joins
+* Ambitious UI
 
 --
 
-![Diagram of Gravity's responsibilites]()
+* Lots of browser code called Javascript
 
-Pumping more Gravity
+--
+
+* We outsource a mobile app, make API
+* Manage Javascript with Backbone, "Eat our own dog food", move UI off Rails
+
+* Admin panel breaks our tests, we extract it
+* CMS + Folio + Mass + Heat... etc. eventually we're not really using Rails at all
+
+--
+
+* Pumping more Gravity
 * Mailing campaigns
 * Backbone UI
 * API
@@ -84,54 +75,51 @@ Pumping more Gravity
 
 --
 
-![Why You No Build Meme]()
-
 * Performance suffered
 * Slow to develop in
 * Confusing to navigate
 * Hard to set up
-Re-acquired technical debt
+* Re-acquired technical debt
 
 --
 
-![Node Logo]
+* Node.js
+* Javascript on the server and browser
+* Expiriment on Martsy
 
 --
 
-![Diagram of Marty's architecture vs. Gravity]()
-
-Separate our UI
-Martsy let us try something new
-
-Better testing
-Faster page loads by sharing rendering code
-
-Highly modular = Easy to expiriment and keep pages small + lightweight
-Smaller responsibilites
-Faster builds + deploys
-Easy to set up (point to staging)
-
-![Maybe split diagrams and so much win]
+* Highly modular = Easy to expiriment and keep pages small + lightweight
+* Smaller responsibilites
 
 --
 
-[Extracted Ezel]()
+* Faster page loads by sharing rendering code
 
 --
 
-[Several open source projects]()
-Blog post in the works
+* Better testing = Faster builds + deploys
+* Pages load faster
+* Flexible, easy to expirement
+* Easy to set up (point to staging)
 
-What is Force?
+--
 
-![Star war meme]
+* Extracted many open source projects
+* Coalesced into Ezel a reusable boilerplate
+* Easel.js was taken
 
-Gravity's UI extracted onto an Ezel (or Martsy-like) technology
-Same benefits as Martsy
-Faster deploys
-Faster pages
-Easy to set up
-etc.
+--
+
+* What's Force
+
+--
+
+* Desktop UI extracted onto an Ezel (or Martsy-like) technology
+* Same benefits as Martsy
+* Faster deploys
+* Faster page loads
+* Easy to set up
 
 --
 
