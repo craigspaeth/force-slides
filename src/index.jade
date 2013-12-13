@@ -1,5 +1,5 @@
 purple = '#6a0bc1'
-
+black = '#000000'
 !!! 5
 html(lang='en')
 head
@@ -15,10 +15,15 @@ head
             em A Tale of Technical Debt
 
         section
-          h1 Force 2
+          img.cover( src='images/artsy.jpg' )
+
+        section
+          #player
+
 
     include scripts
     script.
       Reveal.initialize({
         transition: 'linear'
-      })
+      });
+    include scripts/hack-video.js

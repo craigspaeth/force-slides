@@ -2,31 +2,31 @@
   font-family: 'AvantGarde';
   font-weight: normal;
   font-style: normal;
-  src: url("lib/font/itcavantgardestd-demi-webfont.woff") format("woff");
+  src: url("fonts/itcavantgardestd-demi-webfont.woff") format("woff");
 }
 @font-face {
   font-family: 'Garamond';
   font-weight: normal;
   font-style: normal;
-  src: url("lib/font/agaramondpro-regular-webfont.woff") format("woff");
+  src: url("fonts/agaramondpro-regular-webfont.woff") format("woff");
 }
 @font-face {
   font-family: 'Garamond';
   font-weight: bold;
   font-style: normal;
-  src: url("lib/font/agaramondpro-bold-webfont.woff") format("woff");
+  src: url("fonts/agaramondpro-bold-webfont.woff") format("woff");
 }
 @font-face {
   font-family: 'Garamond';
   font-weight: bold;
   font-style: italic;
-  src: url("lib/font/agaramondpro-bolditalic-webfont.woff") format("woff");
+  src: url("fonts/agaramondpro-bolditalic-webfont.woff") format("woff");
 }
 @font-face {
   font-family: 'Garamond';
   font-weight: normal;
   font-style: italic;
-  src: url("lib/font/agaramondpro-italic-webfont.woff") format("woff");
+  src: url("fonts/agaramondpro-italic-webfont.woff") format("woff");
 }
 body {
   font-family: Garamond;
@@ -37,10 +37,13 @@ body {
   -ms-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
+img.cover {
+  width: 100% !important;
+}
 section.purple {
   color: #fff;
 }
-</style><body><div class="reveal"><div class="slides"><section data-background="#6a0bc1" class="purple"><h1>Force: A Look Back on Artsy Technology<br><em>A Tale of Technical Debt</em></h1></section><section><h1>Force 2</h1></section></div></div><script src="lib/js/head.min.js"></script><script src="js/reveal.min.js"></script><script>// Full list of configuration options available here:
+</style><body><div class="reveal"><div class="slides"><section data-background="#6a0bc1" class="purple"><h1>Force: A Look Back on Artsy Technology<br><em>A Tale of Technical Debt</em></h1></section><section><img src="images/artsy.jpg" class="cover"></section><section><div id="player"></div></section></div></div><script src="lib/js/head.min.js"></script><script src="js/reveal.min.js"></script><script src="http://code.jquery.com/jquery-1.10.2.min.js"></script><script>// Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 controls: true,
@@ -63,4 +66,35 @@ dependencies: [
 ]
 });</script><script>Reveal.initialize({
   transition: 'linear'
-})</script></body></head>
+});</script><script type="text/javascript">
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: 500,
+    width: 700,
+    videoId: 'u8qgehH3kEQ',
+    playerVars: {
+      controls: 0,
+      showinfo: 0
+    },
+    events: {
+      'onReady': play
+    }
+  });
+}
+
+var play = function(event) {
+  player.mute();
+  player.seekTo(13);
+  player.playVideo();
+  player.clearVideo();
+  setTimeout(play, 12000);
+}</script></body></head>
